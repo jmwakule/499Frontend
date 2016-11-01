@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Part 1</title>
+		   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+            <link rel="stylesheet" type="text/css" href="style.css">
+		
+		
+	</head>
+
+	<body style = "background-color: grey;">
+	
+	<div class = "container">
+		<div class="roffset">
+			<div class = "row roffset">
+				<div class= "col-md-3" id = "count">
+					<!--<img src="ESD_full_colour_LightBlue.PNG" height = "100" width="400" id="logo">-->
+                        <p style="text-decoration: underline;" class="text-center">Gas Composition</p>
+                        <p class="text-center">Methane 0.00%</p>
+                        <p class="text-center">Ethane 0.00%</p>
+                        <p class="text-center">Propane 0.00%</p>
+                    
+                        <button type="button" class="btn btn-primary btn-lg btn-block" id="parameter"> Parameters</button>
+                        <div id="parameterpanel" class="panel">
+                            <p>PIC101 Gain</p>
+                            <p>PIC101 Tc</p>
+                            <p>UIC101 Gain</p>
+                            <p>UIC101 Tc</p>
+                            <p>V101 Volume</p>
+                            <p>V102 Volume</p>
+                            <p>Cool Water Temp</p>
+                            <p>UCV101 Cv</p>
+                            <p>HCV101 Cv</p>
+                        </div>
+                    
+                        <button id="units" type="button" class="btn btn-primary btn-lg btn-block"> Units</button>
+                        <div id="unitspanel" class="panel">
+                            <p>Temperature</p>
+                             <form>
+                                 <lable class="radio-inline">
+                                  <input type="radio" name="temperature" value="Celsius" checked> Celsius<br>
+                                     </lable>
+                                 <lable class="radio-inline">
+                                    <input type="radio" name="temperature" value="Fahrenheit" > Fahrenheit<br>
+                                </lable>
+                                </form> 
+                            <p>Power</p>
+                                <form>
+                                 <lable class="radio-inline">
+                                  <input type="radio" name="MW" value="MW" checked> MW<br>
+                                     </lable>
+                                 <lable class="radio-inline">
+                                    <input type="radio" name="hp" value="hp" > hp<br>
+                                </lable>
+                                </form> 
+                            <p>Pressure</p>
+                                <form>
+                                 <lable class="radio-inline">
+                                  <input type="radio" name="gender" value="kPa" checked> kPa<br>
+                                     </lable>
+                                 <lable class="radio-inline">
+                                    <input type="radio" name="gender" value="bar" > bar<br>
+                                </lable>
+                                    <lable class="radio-inline">
+                                    <input type="radio" name="gender" value="psi" > psi<br>
+                                </lable>
+                                </form> 
+                            <p>Volumertic Flow</p>
+                                <form>
+                                 <lable class="radio-inline">
+                                  <input type="radio" name="m/s" value="m/s" checked> m^3/s<br>
+                                     </lable>
+                                 <lable class="radio-inline">
+                                    <input type="radio" name="f/s" value="f/s" > f^3/s<br>
+                                </lable>
+                                </form> 
+                        </div>
+                    
+                        <button type="button" class="btn btn-primary btn-lg btn-block" id="trends"> Trends</button>
+                        <div id="trendspanel" class="panel">Trends</div>
+                    
+                        <button type="button" class="btn btn-primary btn-lg btn-block" id="alarm"> Alarm Setting</button>
+                        <div id="alarmpanel" class="panel">
+                            <div>
+                            <label><input type="checkbox" value="" checked>V101 PAL Trigger:<input type="number" columns="2" rows"1"> bar</label>
+                                </div>
+                            <div>
+                            <label><input type="checkbox" value="" checked>V101 PALL trigger</label>
+                                </div>
+                            <div>
+                            <label><input type="checkbox" value="" checked>V102 PAH trigger</label>
+                                </div>
+                            <div>
+                            <label><input type="checkbox" value="" checked>V102 PAHH trigger</label>
+                                </div>
+                            <div>
+                            <label><input type="checkbox" value="" checked>C101 ERL trigger</label>
+                                </div>
+                            <div>
+                            <label><input type="checkbox" value="" checked>C101 ERLL trigger</label>
+                                </div>
+                            <div>
+                            <label><input type="checkbox" value="" checked>C101 TAH trigger</label>
+                                </div>
+                            <div>
+                            <label><input type="checkbox" value="" checked>C101 TAHH trigger</label>
+                                </div>
+                            <div>
+                            <label><input type="checkbox" value="" checked>CT101 TAH trigger</label>
+                                </div>
+                            <div>
+                            <label><input type="checkbox" value="" checked>CT101 TAHH trigger</label>
+                                </div>
+                        </div>
+                    
+                        <button type="button" class="btn btn-primary btn-lg btn-block"> Exit</button>
+                        
+                    
+                </div>
+				<div class = "col-md-1"></div>
+				<div class = "col-md-8"><img height="600" width="" class="col-*-11" src="model-attempt.png">
+				</div>
+			</div>
+            
+            
+			 
+		</div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="script.js"></script>
+        
+	</body>
+</html>
